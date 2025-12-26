@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+case "${OSTYPE:-}" in
+  linux*|darwin*) ;;
+  *)
+    echo "ERROR: This sync script supports macOS/Linux only (OSTYPE=${OSTYPE:-unknown})." >&2
+    echo "Hint: Use the PowerShell version on Windows: scripts/sync-codex-skill.ps1" >&2
+    exit 1
+    ;;
+esac
+
 SOURCE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/HelloAgents"
 TARGET_DIR="${CODEX_HOME:-$HOME/.codex}/skills/helloagents"
 
