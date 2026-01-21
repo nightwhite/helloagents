@@ -2,50 +2,67 @@
 
 <div align="center">
 
-**AI Programming Modular Skill System — Transform chaotic AI agent outputs into structured, traceable, production-ready code through intelligent routing and human-centric workflows**
+**Intelligent Workflow System - Your autonomous advanced intelligent partner that analyzes, implements, and validates until completion.**
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-[![Documentation](https://img.shields.io/badge/docs-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-2025--12--18.2-orange.svg)](#-version-history)
+[![Version](https://img.shields.io/badge/version-2.0-orange.svg)](./helloagents/CHANGELOG.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
-
-[English](./README.md) · [简体中文](./README_CN.md) · [Quick Start](#-quick-start) · [Documentation](#-documentation)
 
 </div>
 
+<p align="center">
+  <a href="./README.md"><img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"></a>
+  <a href="./README_CN.md"><img src="https://img.shields.io/badge/中文-blue?style=for-the-badge" alt="中文"></a>
+</p>
+
 ---
 
-> **⚠️ Important:** Before using, set the language in `AGENTS.md` file header (`bootstrap: lang=en-US`) and configure **"Response Language"** in Global Rules to "English" to ensure the agent outputs in the expected language.
+## 📑 Table of Contents
+
+<details>
+<summary><strong>Click to expand</strong></summary>
+
+- [🎯 Why HelloAGENTS?](#-why-helloagents)
+- [✨ Features](#-features)
+- [🚀 Quick Start](#-quick-start)
+- [🔧 How It Works](#-how-it-works)
+- [📖 Documentation](#-documentation)
+- [❓ FAQ](#-faq)
+- [🛠️ Troubleshooting](#-troubleshooting)
+- [🆚 Comparison with Other Approaches](#-comparison-with-other-approaches)
+- [📈 Version History](#-version-history)
+- [🔒 Security](#-security)
+- [🙏 Acknowledgments](#-acknowledgments)
+
+</details>
 
 ---
 
 ## 🎯 Why HelloAGENTS?
 
-**The Problem:** AI agents are powerful but unpredictable—they produce inconsistent outputs, can't adapt to different task complexities, lack systematic requirement validation, and make decisions without transparency.
+**Problem:** AI coding assistants often stop at analysis or generate inconsistent outputs without structured workflow management.
 
-**The Solution:** HelloAGENTS introduces an **AI Programming Modular Skill System** with intelligent complexity routing, semantic intent analysis, structured requirement scoring, and human-centric interaction patterns that automatically adapt to your task needs.
+**Solution:** HelloAGENTS provides an intelligent workflow system with 3-layer routing, 4-stage workflow, and 3-layer acceptance to ensure production-ready results.
 
 | Challenge | Without HelloAGENTS | With HelloAGENTS |
 |-----------|---------------------|------------------|
-| **One-size-fits-all workflow** | Same heavy process for every change | Smart router picks 1 of 4 workflows via semantic + intent analysis |
-| **Vague requirements accepted** | Agent guesses and fails | 10-point scoring system with targeted follow-up questions |
-| **Black-box decision making** | No insight into why agent chose an approach | On-demand internal thinking with explicit uncertainty handling |
-| **No state awareness** | Loses context between interactions | G12 state variables track packages, modes, and context |
-| **Inconsistent outputs** | Random formatting and structure | G6 unified output format with mandatory validation |
-| **Platform incompatibility** | Unix commands fail on Windows | Cross-platform rules with PowerShell syntax validation |
-| **Unsafe operations** | Accidental production deployments | EHRB detection with automatic workflow escalation |
+| **Inconsistent Output** | Varies by prompt quality | Unified format with G3 output rules |
+| **Premature Termination** | Stops at analysis or partial implementation | Complete execution until verification |
+| **No Quality Control** | Manual review required | 3-layer acceptance (Stage/Gate/Flow) |
+| **Context Loss** | Forgets previous decisions | State variables + knowledge base sync |
+| **Risk Management** | No safety checks | EHRB detection with 2-layer analysis |
 
 ### 💡 Best For
-- ✅ **Teams** needing intelligent workflow selection based on task complexity
-- ✅ **Projects** requiring systematic requirement validation before coding
-- ✅ **Developers** who want transparency in AI decision-making processes
-- ✅ **Cross-platform projects** (Windows PowerShell + macOS + Linux)
-- ✅ **Regulated industries** requiring full traceability and audit trails
+
+- ✅ **Developers** seeking structured AI-assisted development workflows
+- ✅ **Teams** needing consistent code generation and documentation
+- ✅ **Projects** requiring quality assurance and risk management
+- ✅ **AI-assisted workflows** beyond just coding (documentation, analysis, planning)
 
 ### ⚠️ Not For
-- ❌ One-off scripts without quality requirements
-- ❌ Projects where "just make it work" is acceptable
-- ❌ Environments without file system access
+
+- ❌ Simple one-off code snippets (use direct AI prompts)
+- ❌ Non-technical tasks without structured requirements
+- ❌ Projects without version control
 
 ---
 
@@ -57,155 +74,143 @@
 <tr>
 <td width="50%">
 
-**🧭 Unified Intelligent Routing**
+**🧭 3-Layer Intelligent Routing**
 
-Multi-dimensional analysis for automatic workflow selection:
-- **Semantic Analysis**: Understands request meaning, not just keywords
-- **Intent Classification**: Q&A / Modification / Command types
-- **Scope Estimation**: Micro (≤2 files) → Large (architecture-level)
-- **EHRB Signal Detection**: Automatic risk identification
+- Context-aware conversation continuity
+- Tool layer for SKILL/MCP/Plugin integration
+- Intent analysis with complexity assessment
 
-**Your benefit:** Right workflow every time—no manual mode switching.
+**Your benefit:** Automatic routing to the right workflow
 
 </td>
 <td width="50%">
 
-**📊 Requirements Analysis with Scoring**
+**📚 4-Stage Workflow Engine**
 
-Structured validation before any code changes:
-- **10-point scoring** across 4 dimensions (Goal clarity, Expected results, Scope boundaries, Constraints)
-- **Targeted follow-up questions** when score <7
-- **On-demand internal thinking** in `<thinking>` blocks
-- **Context-aware questioning** avoids asking known information
+- Evaluate → Analyze → Design → Develop
+- Structured progression with quality gates
+- Automatic knowledge base synchronization
 
-**Your benefit:** Fewer failed implementations from vague requirements.
+**Your benefit:** Production-ready results every time
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-**🔄 Phase & State Management**
+**⚡ 3-Layer Acceptance System**
 
-Systematic workflow with full traceability:
-- **3-phase workflow**: Requirements Analysis → Solution Design → Development Implementation
-- **G12 state variables**: CREATED_PACKAGE, CURRENT_PACKAGE, MODE_*
-- **G11 lifecycle management**: Auto-migration to history/
-- **Context preservation**: Handles follow-ups, selections, confirmations
+- Stage-level validation
+- Inter-stage quality gates
+- Flow-level comprehensive review
 
-**Your benefit:** Never lose track of what was planned vs. executed.
+**Your benefit:** Consistent quality assurance
 
 </td>
 <td width="50%">
 
-**🛡️ Human-Centric Safeguards**
+**🛡️ EHRB Security Detection**
 
-Transparent and safe AI behavior:
-- **G3 Uncertainty Principles**: Explicit assumptions + conservative fallback
-- **EHRB escalation**: Auto-upgrades to stricter workflow on risk detection
-- **Unified output format**: Consistent, validated responses (G6.1)
-- **GPT/SKILLS compliant**: Rule structure follows official guidelines
+- Keyword-based first layer scanning
+- Semantic analysis second layer
+- Automatic workflow escalation on risk
 
-**Your benefit:** Understand why the agent made each decision.
+**Your benefit:** Protected from high-risk operations
 
 </td>
 </tr>
 </table>
 
 ### 📊 By the Numbers
-- **4 intelligent workflows** auto-selected via semantic routing (vs. manual mode switching)
-- **10-point scoring** with 4 dimensions ensures requirement quality before coding
-- **70% smaller** core ruleset through modular skill architecture
-- **Zero** black-box decisions with G3 uncertainty disclosure
-- **100%** traceability through G11 solution package lifecycle
-- **Cross-platform** Windows PowerShell + Unix + Python compatibility
+
+- **3-Layer Routing** — Context → Tools → Intent hierarchical processing
+- **4 Workflow Stages** — Complete development lifecycle coverage
+- **12 Commands** — Full command set for all operations
+- **44 Files** — Modular architecture with reference library
 
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- CLI environment with file system access (Codex CLI, Claude Code, or custom AI client)
+
+- AI CLI tool that supports AGENTS.md/CLAUDE.md configuration (Claude Code, Codex CLI, etc.)
+- Git installed and configured
 
 ### Installation
 
-**Step 1: Copy the ruleset to your directory**
+**Step 1: Get HelloAGENTS**
 
-Choose your platform and language version:
-
-- **For Codex CLI**: Copy folder to `~/.codex/`
-  - Chinese: `Codex/Skills/CN` → `~/.codex/`
-  - English: `Codex/Skills/EN` → `~/.codex/`
-
-- **For Claude Code**: Copy folder to `~/.claude/`
-  - Chinese: `Claude/Skills/CN` → `~/.claude/`
-  - English: `Claude/Skills/EN` → `~/.claude/`
-
-**Step 2: Configure language**
-
-Edit the AGENTS.md header:
-
-```yaml
-# In AGENTS.md G1 section:
-OUTPUT_LANGUAGE: English  # or "Simplified Chinese"
+```bash
+git clone https://github.com/hellowind777/helloagents.git
+cd helloagents
 ```
 
-**Step 3: Verify installation**
+**Step 2: Copy files to your CLI configuration directory**
 
-Restart your terminal and ask:
-```
-"Show me the skills reference table"
+This project contains two parts that need to be placed in different locations:
+
+| Source | Target | Description |
+|--------|--------|-------------|
+| `helloagents/AGENTS.md` | `<CLI_CONFIG_ROOT>/` | Main configuration file, place in config root |
+| `helloagents/skills/helloagents/` | `<CLI_CONFIG_ROOT>/skills/helloagents/` | Skill package, place in skills subdirectory |
+
+**How to determine your CLI config directory:**
+- Claude Code: `~/.claude/`
+- Codex CLI: `~/.codex/`
+- Other tools: refer to their documentation
+
+**Example (Claude Code on macOS/Linux):**
+
+```bash
+cp helloagents/AGENTS.md ~/.claude/
+cp -r helloagents/skills/helloagents ~/.claude/skills/
 ```
 
-**Expected:** Agent lists 5 skills (analyze, design, develop, kb, templates)
+**Example (Claude Code on Windows PowerShell):**
+
+```powershell
+Copy-Item helloagents\AGENTS.md $env:USERPROFILE\.claude\
+Copy-Item -Recurse helloagents\skills\helloagents $env:USERPROFILE\.claude\skills\
+```
+
+**Step 3: Verify Installation**
+
+Restart your AI CLI and run:
+
+```
+~help
+```
+
+**Expected Output:**
+
+```
+💡【HelloAGENTS】- Help
+
+### Available Commands
+
+| Command | Function |
+|---------|----------|
+| ~auto | Full authorization mode |
+| ~plan | Execute to design phase |
+| ~exec | Execute solution package |
+...
+
+────
+🔄 Next: Enter command or describe your requirement
+```
 
 ### First Use Example
 
 ```bash
-# 1. Simple fix → Routes to Quick Fix (semantic: modification + micro scope)
-"Fix the typo in src/utils/helper.ts line 42: 'respose' should be 'response'"
+# 1. Get help and see available commands
+"~help"
 
-# 2. Medium task → Routes to Light Iteration (semantic: modification + small scope)
-"Add error handling to login, signup, and password reset functions"
+# 2. Start with full authorization mode
+"~auto implement user authentication feature"
 
-# 3. Complex task → Routes to Full R&D with requirement scoring
-"Add user authentication with OAuth2"
-# Agent will score requirements and may ask follow-up questions
-
-# 4. Full authorization mode → Continuous execution
-~auto "Refactor the database layer to use repositories"
-```
-
-**Expected Output (Quick Fix):**
-
-```
-✅【HelloAGENTS】- Quick Fix Mode Complete
-
-- ✅ Change: Fixed typo 'respose' → 'response'
-- 📁 Affected file: src/utils/helper.ts
-- 📚 Knowledge Base: Updated module documentation
-
-────
-📁 Changes:
-  - src/utils/helper.ts
-  - helloagents/wiki/modules/utils.md
-
-🔄 Next Step: Please verify the fix
-```
-
-**Expected Output (Requirement Scoring Follow-up):**
-
-```
-❓【HelloAGENTS】- Requirements Analysis
-
-Current requirement completeness score: 5/10, unable to determine optimization goals and expected outcomes.
-
-1. Which file or module do you want to optimize?
-2. What specific problems need optimization? (e.g., slow performance, code duplication)
-3. What results do you expect after optimization?
-4. Are there specific performance metrics or time constraints?
-
-Please answer by number, or enter "continue with current requirements" to skip (may affect solution quality).
+# 3. Or use planning mode first
+"~plan add dark mode support"
 ```
 
 ---
@@ -219,201 +224,111 @@ Please answer by number, or enter "continue with current requirements" to skip (
 
 ```mermaid
 flowchart TD
-    Start([User Request]) --> Extract[Information Extraction]
+    Start([User Input]) --> L1{Layer 1: Context}
 
-    Extract --> Semantic{Semantic Analysis}
-    Semantic --> Intent{Intent Classification}
-    Intent --> Scope{Scope Estimation}
-    Scope --> EHRB{EHRB Signal Check}
+    L1 -->|"Continue External Tool"| ExtTool[🟣 External Tool]
+    L1 -->|"Continue HelloAGENTS Task"| Resume[Resume Task]
+    L1 -->|"New Request"| L2{Layer 2: Tools}
 
-    EHRB --> Router{Unified Intelligent Router}
+    L2 -->|"CLI Command"| CLI[Execute CLI]
+    L2 -->|"HelloAGENTS Command"| Cmd[Process Command]
+    L2 -->|"External Tool Match"| ExtTool
+    L2 -->|"No Match"| L3{Layer 3: Intent}
 
-    Router -->|"Intent=Q&A"| QA[💡 Consultation Q&A]
-    Router -->|"Micro scope, clear path"| QuickFix[⚡ Quick Fix Mode]
-    Router -->|"Small scope, no arch"| LightIter[🔄 Light Iteration]
-    Router -->|"Multi-file, clear req"| StdDev[📦 Standard Development]
-    Router -->|"Vague/arch/EHRB"| FullRD[🔬 Full R&D]
+    L3 -->|"Question/Chat"| Direct[💡 Direct Answer]
+    L3 -->|"Change Request"| Eval[Evaluate Stage]
 
-    FullRD --> Analyze[📋 Analyze Skill]
-    Analyze --> Scoring{Score ≥7?}
+    Eval --> Score{Score ≥ 7?}
+    Score -->|"No"| Ask[❓ Ask for Clarification]
+    Ask --> Eval
+    Score -->|"Yes"| Complex{Complexity?}
 
-    Scoring -->|"<7"| FollowUp[❓ Targeted Follow-up]
-    FollowUp --> UserResp{User Response}
-    UserResp -->|"Supplement"| Scoring
-    UserResp -->|"Continue anyway"| Design
-    UserResp -->|"Cancel"| Cancelled[🚫 Cancelled]
+    Complex -->|"Simple"| Tweak[⚡ Tweak Mode]
+    Complex -->|"Medium"| Light[🔄 Light Iteration]
+    Complex -->|"Complex"| Standard[📋 Standard Dev]
 
-    Scoring -->|"≥7"| Design[📐 Design Skill]
-    Design --> Develop[🛠️ Develop Skill]
+    Tweak --> Done[✅ Complete]
+    Light --> Analyze[Analyze] --> DesignL[Design] --> DevL[Develop] --> Done
+    Standard --> AnalyzeS[Analyze] --> DesignS[Full Design] --> DevS[Develop] --> Done
 
-    StdDev --> Design
-    LightIter --> SimplePlan[Simplified Plan<br/>task.md only]
-    SimplePlan --> Develop
-
-    QuickFix --> DirectEdit[Direct Code Edit]
-    DirectEdit --> KBCheck{KB Exists?}
-    KBCheck -->|Yes| UpdateKB[Update Module Doc]
-    KBCheck -->|No| WarnInit[⚠️ Suggest ~init]
-
-    Develop --> StateUpdate[Update State Variables<br/>CURRENT_PACKAGE]
-    StateUpdate --> Execute[Execute task.md]
-    Execute --> SyncKB[Sync Knowledge Base]
-    SyncKB --> Migrate[Migrate to history/]
-    Migrate --> ScanLegacy[Scan Legacy Plans<br/>G11]
-
-    ScanLegacy --> Done[✅ Complete]
-    UpdateKB --> Done
-    WarnInit --> Done
-    QA --> Done
-
-    style Router fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style Scoring fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style FollowUp fill:#fce4ec,stroke:#c2185b
+    style Start fill:#e3f2fd
+    style ExtTool fill:#ce93d8
     style Done fill:#4caf50,color:#fff
-    style Cancelled fill:#ff5252,color:#fff
+    style Tweak fill:#fff3e0
+    style Light fill:#e8f5e9
+    style Standard fill:#e3f2fd
 ```
 
 </details>
 
-### Unified Intelligent Routing Explained
+### Workflow Stages Explained
 
 <table>
-<tr><th>Analysis Step</th><th>What It Does</th><th>Evaluation Criteria</th><th>Output</th></tr>
+<tr><th>Stage</th><th>Function</th><th>Trigger</th><th>Output</th></tr>
 
 <tr>
-<td><strong>1. Semantic Analysis</strong></td>
+<td><strong>Evaluate</strong></td>
 <td>
-• Understands request meaning<br>
-• Identifies action verbs and objects<br>
-• Detects implicit requirements
+• Score requirement completeness<br>
+• Ask clarifying questions<br>
+• Assess complexity
 </td>
-<td>Natural language understanding, not keyword matching</td>
+<td>Any change request</td>
 <td>
-• Request interpretation<br>
-• Implied constraints
+• Requirement score (≥7 to proceed)<br>
+• Complexity assessment<br>
+• Workflow mode selection
 </td>
 </tr>
 
 <tr>
-<td><strong>2. Intent Classification</strong></td>
+<td><strong>Analyze</strong></td>
 <td>
-• Q&A type (question/chat)<br>
-• Modification type (code change)<br>
-• Command type (~auto/~plan/~exec)
+• Scan project structure<br>
+• Identify tech stack<br>
+• Check knowledge base
 </td>
-<td>User's primary goal</td>
+<td>Score ≥ 7</td>
 <td>
-• Intent category<br>
-• Command detection
-</td>
-</tr>
-
-<tr>
-<td><strong>3. Scope Estimation</strong></td>
-<td>
-• Micro: ≤2 files, ≤30 lines<br>
-• Small: 3-5 files<br>
-• Medium: Multi-file coordination<br>
-• Large: Architecture-level
-</td>
-<td>File count, line count, architecture impact</td>
-<td>
-• Scope category<br>
-• Uncertainty flag
+• Project context<br>
+• Module dependencies<br>
+• KB status
 </td>
 </tr>
 
 <tr>
-<td><strong>4. EHRB Detection</strong></td>
+<td><strong>Design</strong></td>
 <td>
-• Production environment signals<br>
-• PII data processing<br>
-• Destructive operations<br>
-• Payment-related changes
+• Create solution package<br>
+• Define task breakdown<br>
+• Risk assessment
 </td>
-<td>Keywords: prod, DROP, rm -rf, payment</td>
+<td>Analysis complete</td>
 <td>
-• Risk level<br>
-• Escalation trigger
+• proposal.md<br>
+• tasks.md<br>
+• Solution package
 </td>
 </tr>
 
 <tr>
-<td><strong>5. Route Selection</strong></td>
+<td><strong>Develop</strong></td>
 <td>
-• Apply decision principles<br>
-• Handle uncertainty (G3)<br>
-• Select optimal workflow
+• Execute tasks<br>
+• Generate code<br>
+• Run validations
 </td>
-<td>"All must meet" for simple modes; "Any match" for Full R&D</td>
+<td>Design approved</td>
 <td>
-• Selected workflow<br>
-• Reasoning trace
+• Code changes<br>
+• Test results<br>
+• KB sync
 </td>
 </tr>
 
 </table>
 
-### Requirements Analysis Deep Dive
-
-**The 10-Point Scoring System:**
-
-<table>
-<tr><th>Dimension</th><th>Points</th><th>What It Measures</th><th>Low Score Triggers</th></tr>
-
-<tr>
-<td><strong>Goal Clarity</strong></td>
-<td>0-3</td>
-<td>Is the task objective clear and specific?</td>
-<td>"Optimize code", "Make it better"</td>
-</tr>
-
-<tr>
-<td><strong>Expected Results</strong></td>
-<td>0-3</td>
-<td>Are success criteria and deliverables defined?</td>
-<td>No mention of expected behavior</td>
-</tr>
-
-<tr>
-<td><strong>Scope Boundaries</strong></td>
-<td>0-2</td>
-<td>Is the task scope clearly bounded?</td>
-<td>Open-ended requests</td>
-</tr>
-
-<tr>
-<td><strong>Constraints</strong></td>
-<td>0-2</td>
-<td>Are time, performance, business limits stated?</td>
-<td>No constraints mentioned</td>
-</tr>
-
-</table>
-
-**On-Demand Internal Thinking:**
-
-```
-<thinking>
-1. Analyze each scoring dimension:
-   - Goal Clarity (0-3): User wants "optimization" but doesn't specify what → 1 point
-   - Expected Results (0-3): No success criteria mentioned → 1 point
-   - Scope Boundaries (0-2): "the code" is too vague → 0 points
-   - Constraints (0-2): No constraints → 0 points
-2. Evidence: User said "optimize the code" without specifics
-3. Missing info: Which module? What problem? What metrics?
-4. Total: 2/10 points
-5. Decision: Must ask follow-up questions
-</thinking>
-```
-
-**Targeted Follow-up Questions:**
-
-The system asks only what it doesn't know:
-- ✅ "Which module needs optimization?" (user hasn't specified)
-- ✅ "What specific problem are you facing?" (not mentioned)
-- ❌ ~~"What framework are you using?"~~ (already known from codebase)
-- ❌ ~~"What's the project structure?"~~ (already scanned)
+> **Note:** Tweak Mode is an execution mode for simple changes, not a workflow stage. It bypasses the full 4-stage workflow for quick single-point modifications.
 
 ---
 
@@ -422,190 +337,143 @@ The system asks only what it doesn't know:
 ### Core Concepts
 
 <table>
-<tr><th>Concept</th><th>Definition</th><th>Why It Matters</th></tr>
+<tr><th>Concept</th><th>Definition</th><th>Importance</th></tr>
 
 <tr>
-<td><strong>Semantic Analysis</strong></td>
-<td>Understanding request meaning through NLU, not keyword matching</td>
-<td>Enables accurate intent detection even with ambiguous phrasing</td>
+<td><strong>Solution Package</strong></td>
+<td>A folder containing proposal.md and tasks.md for a feature</td>
+<td>Central unit of work tracking</td>
 </tr>
 
 <tr>
-<td><strong>Intent Classification</strong></td>
-<td>Categorizing user requests into Q&A, Modification, or Command types</td>
-<td>Determines whether to route to Q&A, development workflow, or command execution</td>
-</tr>
-
-<tr>
-<td><strong>Requirement Scoring</strong></td>
-<td>10-point scale across 4 dimensions with ≥7 threshold</td>
-<td>Prevents wasted effort on poorly-defined requirements</td>
-</tr>
-
-<tr>
-<td><strong>Follow-up Mechanism</strong></td>
-<td>Targeted questions when score <7, avoiding known information</td>
-<td>Efficient requirement gathering without redundant questions</td>
-</tr>
-
-<tr>
-<td><strong>Phase Management</strong></td>
-<td>3-phase workflow: Analysis → Design → Implementation</td>
-<td>Ensures systematic progression with clear checkpoints</td>
-</tr>
-
-<tr>
-<td><strong>State Management (G12)</strong></td>
-<td>Variables tracking packages, modes, and context</td>
-<td>Maintains consistency across multi-turn interactions</td>
-</tr>
-
-<tr>
-<td><strong>G3 Uncertainty Principles</strong></td>
-<td>Explicit disclosure of assumptions and conservative fallback</td>
-<td>Transparent decision-making, no hidden guesswork</td>
+<td><strong>Knowledge Base</strong></td>
+<td>helloagents/ directory with project documentation</td>
+<td>Single source of truth for project knowledge</td>
 </tr>
 
 <tr>
 <td><strong>EHRB Detection</strong></td>
-<td>Extreme High-Risk Behavior identification and escalation</td>
-<td>Automatic safety guardrails for dangerous operations</td>
+<td>Extremely High Risk Behavior detection system</td>
+<td>Prevents dangerous operations</td>
+</tr>
+
+<tr>
+<td><strong>3-Layer Acceptance</strong></td>
+<td>Stage/Gate/Flow validation hierarchy</td>
+<td>Quality assurance at every level</td>
 </tr>
 
 </table>
 
-### Special Commands
+### Commands Reference
 
-| Command | Mode | When to Use | Example |
-|---------|------|-------------|---------|
-| `~auto` / `~fa` | Full Authorization | Trust agent for complete Analysis→Design→Develop | `~auto "Add login"` |
-| `~plan` / `~design` | Planning Only | Design solution for review before execution | `~plan "Refactor DB"` |
-| `~exec` / `~run` | Execution Only | Run pre-approved plan from `plan/` | `~exec` |
-| `~init` / `~wiki` | Knowledge Base | Initialize or refresh KB from codebase | `~init` |
+| Command | Mode | Use Case | Example |
+|---------|------|----------|---------|
+| `~auto` | Full Authorization | End-to-end execution | `~auto add login feature` |
+| `~plan` | Planning Mode | Design only, no execution | `~plan refactor auth module` |
+| `~exec` | Direct Execution | Execute existing package | `~exec` |
+| `~init` | KB Management | Initialize knowledge base | `~init` |
+| `~upgrade` | KB Management | Upgrade knowledge base | `~upgrade` |
+| `~clean` | Maintenance | Clean leftover packages | `~clean` |
+| `~commit` | Git Operation | Commit with detection | `~commit` |
+| `~test` | Validation | Run project tests | `~test` |
+| `~review` | Quality | Code review | `~review` |
+| `~validate` | Quality | Validate KB structure | `~validate` |
+| `~rollback` | Recovery | Smart rollback | `~rollback` |
+| `~help` | Information | Show help menu | `~help` |
 
-### State Variables (G12)
+### Configuration
 
-```yaml
-CREATED_PACKAGE: Solution package path created during Design phase
-  - Set: After detailed planning creates package
-  - Read: By Develop step 1 in Full Auth mode
-  - Clear: After read or process terminated
-
-CURRENT_PACKAGE: Currently executing solution package path
-  - Set: When Develop determines which package to execute
-  - Use: Excluded from legacy plan scan
-  - Clear: After migration to history/
-
-MODE_FULL_AUTH: Full authorization command active state
-MODE_PLANNING: Planning command active state
-MODE_EXECUTION: Execution command active state
-  - Track: Active special command state
-  - Control: Silent execution behavior
-  - Clear: When command completes or user cancels
-```
-
-### GPT/SKILLS Compliant Rule Structure
-
-HelloAGENTS follows official guidelines for AI agent ruleset design:
+**Global Settings (in AGENTS.md):**
 
 ```yaml
-Rule Structure Pattern:
-  - Global rules (G1-G12): Universal constraints and principles
-  - Modular skills: Lazy-loaded detailed procedures
-  - XML-like tags: <uncertainty_principles>, <routing_rules>
-  - CRITICAL markers: ⚠️ for mandatory enforcement
-  - Hierarchical organization: Phase → Step → Action
-
-Output Format Compliance:
-  - Template method pattern: Consistent structure across all outputs
-  - Status symbols: ✅❓⚠️🚫❌💡 with defined meanings
-  - Validation checklist: Self-check before output
-  - Language rules: G1 OUTPUT_LANGUAGE enforcement
+OUTPUT_LANGUAGE: zh-CN          # Output language
+ENCODING: UTF-8                 # File encoding
+KB_CREATE_MODE: 2               # KB mode: 0=OFF, 1=ON_DEMAND, 2=AUTO_FOR_CODING, 3=ALWAYS
+BILINGUAL_COMMIT: 1             # Bilingual commits: 0=single, 1=bilingual
 ```
+
+**KB Create Modes:**
+- `0 (OFF)`: Skip all KB operations
+- `1 (ON_DEMAND)`: Create KB only when explicitly requested
+- `2 (ON_DEMAND_AUTO_FOR_CODING)`: Auto-create for coding tasks (default)
+- `3 (ALWAYS)`: Always create/update KB
 
 ---
 
 ## ❓ FAQ
 
 <details>
-<summary><strong>Q: How does semantic analysis differ from keyword matching?</strong></summary>
+<summary><strong>Q: How does HelloAGENTS differ from using raw AI prompts?</strong></summary>
 
-**A:** Semantic analysis understands meaning, not just words:
-
-| Input | Keyword Matching | Semantic Analysis |
-|-------|------------------|-------------------|
-| "Make login faster" | Might miss "faster" = performance | Understands: optimization request for login module |
-| "Fix the thing that broke" | Can't determine what "thing" is | Asks targeted follow-up about specific error |
-| "Add OAuth like we discussed" | Doesn't know context | Checks conversation history for OAuth details |
-
+**A:** HelloAGENTS provides:
+- Structured 4-stage workflow vs. ad-hoc responses
+- 3-layer routing for intelligent request handling
+- Quality gates and acceptance criteria
+- Knowledge base for context persistence
+- EHRB security detection
 </details>
 
 <details>
-<summary><strong>Q: Why is requirement scoring important?</strong></summary>
+<summary><strong>Q: Can I use HelloAGENTS with any AI CLI tool?</strong></summary>
 
-**A:** Without scoring, agents often:
-- Start coding with incomplete understanding
-- Produce solutions that miss the actual need
-- Require multiple rounds of correction
-
-With the 10-point system:
-- Clear threshold (≥7) before proceeding
-- Targeted questions fill specific gaps
-- Higher first-attempt success rate
+**A:** Yes, HelloAGENTS is designed to work with any AI CLI that supports agent/skill loading:
+- Claude Code
+- Codex CLI
+- Gemini CLI
+- And other compatible tools
 </details>
 
 <details>
-<summary><strong>Q: What happens when the agent is uncertain?</strong></summary>
+<summary><strong>Q: What's the difference between ~auto and ~plan?</strong></summary>
 
-**A:** G3 Uncertainty Principles require:
-1. **Explicit disclosure**: "⚠️ Uncertainty Factor: [description]"
-2. **List assumptions**: What the decision is based on
-3. **Conservative choice**: Safer/more complete path
-4. **Alternatives**: 2-3 options if reasonable
-
-Example:
-```
-⚠️ Uncertainty Factor: Scope at Quick Fix vs Light Iteration boundary
-- Assumption: Implementation may touch more files
-- Decision: Using Light Iteration (safer choice)
-- Alternative: If confirmed ≤2 files, can switch to Quick Fix
-```
+**A:**
+- `~auto`: Full authorization mode - executes through all stages silently until completion
+- `~plan`: Planning mode - stops after design phase for review before execution
 </details>
 
 <details>
-<summary><strong>Q: How does state management prevent context loss?</strong></summary>
+<summary><strong>Q: Do I need to initialize the knowledge base first?</strong></summary>
 
-**A:** G12 state variables maintain:
-- **CREATED_PACKAGE**: Links Design output to Develop input
-- **CURRENT_PACKAGE**: Tracks what's being executed
-- **MODE_***: Remembers active command context
-
-This ensures:
-- Develop executes the right plan (not an old one)
-- Legacy scan excludes current work
-- Commands can be cancelled cleanly
+**A:** Not necessarily. With `KB_CREATE_MODE: 2` (default), the knowledge base is auto-created for coding tasks. You can also use `~init` to explicitly create it.
 </details>
 
 <details>
-<summary><strong>Q: What makes HelloAGENTS "human-centric"?</strong></summary>
+<summary><strong>Q: How do I handle leftover solution packages?</strong></summary>
 
-**A:** Several design choices:
-- **Transparent decisions**: G3 explains why, not just what
-- **Targeted questions**: Doesn't ask what it already knows
-- **Unified format**: Predictable, consistent outputs
-- **Phase confirmations**: User can review before proceeding
-- **Safe defaults**: Conservative routing, EHRB detection
+**A:** Use `~clean` to scan and clean up incomplete or abandoned solution packages in the plan/ directory.
 </details>
 
 <details>
-<summary><strong>Q: Is this compliant with GPT/SKILLS official guidelines?</strong></summary>
+<summary><strong>Q: What triggers EHRB detection?</strong></summary>
 
-**A:** Yes, HelloAGENTS follows official patterns:
-- **Modular architecture**: Skills loaded on-demand
-- **XML-like tags**: For structured rule sections
-- **CRITICAL markers**: Clear mandatory vs. optional rules
-- **Template method**: Consistent output structure
-- **State management**: Explicit variable tracking
+**A:** EHRB detection triggers on:
+- Production environment keywords (prod, production, live, master)
+- Destructive operations (rm -rf, DROP TABLE, etc.)
+- Irreversible operations (--force, --hard)
+- Permission changes (chmod 777, sudo)
+- Sensitive data patterns (password, api_key, etc.)
+</details>
+
+<details>
+<summary><strong>Q: Can I customize the workflow?</strong></summary>
+
+**A:** Yes, you can modify the reference modules in `references/` to customize stages, rules, and behaviors for your specific needs.
+</details>
+
+<details>
+<summary><strong>Q: What's the difference between v1 and v2?</strong></summary>
+
+**A:** Major differences:
+
+| Aspect | v1 (2025-12) | v2 (2026-01) |
+|--------|--------------|--------------|
+| Positioning | AI Programming Partner | Intelligent Workflow System |
+| Stages | 3 stages | 4 stages (+ Evaluate) |
+| Routing | Simple | 3-layer (Context→Tools→Intent) |
+| Acceptance | Basic | 3-layer (Stage/Gate/Flow) |
+| Files | 6 files | 44 files |
+| Commands | 4 commands | 12 commands |
 </details>
 
 ---
@@ -614,39 +482,78 @@ This ensures:
 
 ### Routing Issues
 
-**Problem:** Agent routes to wrong workflow
-
-**Cause:** Ambiguous scope or missing context
+**Problem:** Request not being routed correctly
 
 **Solution:**
 ```bash
-# ❌ Vague (uncertain scope)
-"Add error handling"
+# Check if HelloAGENTS is loaded
+"~help"
 
-# ✅ Specific (clear scope)
-"Add try-catch error handling to login.ts and signup.ts (2 files, ~20 lines each)"
+# If not loaded, verify installation path
+# Check your AI CLI's skill/agent configuration
 ```
 
 ---
 
-**Problem:** Requirement score always <7, constant follow-ups
+**Problem:** External tool not recognized
 
-**Cause:** Request lacks required dimensions
+**Cause:** Tool not properly registered or conflicting with HelloAGENTS commands
 
 **Solution:**
 ```bash
-# ❌ Missing dimensions (scores ~2-3/10)
-"Optimize the code"
+# Use explicit tool invocation syntax
+"/skill-name" or "$skill-name" for SKILLs
+"mcp://server" for MCP
+"@agent-name" for sub-agents
+```
 
-# ✅ All dimensions covered (scores 8-9/10)
-"Optimize the ProductList component (src/components/ProductList.tsx)
- to reduce re-renders. Currently renders 50+ times per page load.
- Target: <10 renders. Must maintain existing filter functionality."
+### Workflow Issues
+
+**Problem:** Stuck in evaluation stage
+
+**Cause:** Requirement score below 7
+
+**Solution:**
+```bash
+# Provide more specific requirements
+# Answer clarifying questions
+# Or override with:
+"Skip evaluation and proceed"
 ```
 
 ---
 
-### State Issues
+**Problem:** Solution package validation failed
+
+**Cause:** Missing required files or format errors
+
+**Solution:**
+```bash
+# Validate package manually
+"~validate"
+
+# Check package structure:
+# plan/YYYYMMDDHHMM_feature/
+#   ├── proposal.md
+#   └── tasks.md
+```
+
+### Knowledge Base Issues
+
+**Problem:** KB not being created
+
+**Cause:** KB_CREATE_MODE set to OFF or wrong mode
+
+**Solution:**
+```bash
+# Check current mode in AGENTS.md
+# KB_CREATE_MODE: 2 for auto-create on coding tasks
+
+# Or explicitly initialize:
+"~init"
+```
+
+---
 
 **Problem:** Wrong solution package executed
 
@@ -667,48 +574,44 @@ This ensures:
 
 | Approach | Pros | Cons | HelloAGENTS Advantage |
 |----------|------|------|----------------------|
-| **Raw AI Prompts** | Flexible | No structure, inconsistent | Semantic routing + unified format |
-| **Cursor / Copilot** | IDE-integrated | No requirement validation | 10-point scoring + follow-ups |
-| **Custom Prompts** | Tailored | No state management | G12 state + G11 lifecycle |
-| **AutoGPT** | Autonomous | Black-box decisions | G3 uncertainty disclosure |
-| **Aider** | Good refactoring | Unix-only, no phases | Cross-platform + 3-phase workflow |
+| **Raw AI Prompts** | Flexible | No structure, inconsistent | 3-layer routing + unified format |
+| **Cursor / Copilot** | IDE-integrated | No requirement validation | 10-point scoring + 3-layer acceptance |
+| **Custom Prompts** | Tailored | No state management | State variables + package lifecycle |
+| **AutoGPT** | Autonomous | Black-box decisions | Modular references + transparent routing |
+| **Aider** | Good refactoring | Unix-only, no phases | Cross-platform + 4-stage workflow |
 
 ---
 
 ## 📈 Version History
 
-### Latest: 2025-12-18.2 🎉
+### Latest: v2.0 (2026-01-16) 🎉
 
-**New in this version:**
-- 🔴 **Renamed**: "Modular AI Programming Skill System" → "AI Programming Modular Skill System"
-- ✨ **Enhanced**: Windows PowerShell syntax constraints (G1)
-  - Added: File operations -Force, Environment variables $env:VAR
-  - Added: Parameter combination validation, Command chaining rules
-  - Added: Comparison operators (-gt/-lt), Null comparison ($null placement)
+**Positioning Evolution:**
+- 🔴 **System Rename**: From "AI Programming Modular Skill System" to **"Intelligent Workflow System"**
+- 🔴 **Role Shift**: From "Advanced Programming Partner" to **"Advanced Intelligent Partner"**
+- 🔴 **Scope Expansion**: Beyond coding to general AI-assisted workflows
 
-**Previous: 2025-12-16.2**
-- ✨ Modular Skills System (5 independent skills)
-- ✨ Complexity Router (4 adaptive workflows)
-- ✨ G3 Uncertainty Principles
-- ✨ Cross-Platform Compatibility
-- 📦 70% smaller core ruleset
+**Major Architectural Upgrade:**
+- 🔴 **Modular Architecture**: From 6 files to 44 files with reference library
+- 🔴 **4 Workflow Stages**: Added Evaluate stage (Tweak is an execution mode)
+- 🔴 **3-Layer Routing**: Context → Tools → Intent hierarchical processing
+- 🔴 **3-Layer Acceptance**: Stage/Gate/Flow quality assurance
+- 🔴 **6 Core Principles**: Added "Prudent Verification" and "Conservative Modification"
+- ✨ **12 Commands**: Full command set (~auto, ~plan, ~exec, ~init, ~upgrade, ~clean, ~commit, ~test, ~review, ~validate, ~rollback, ~help)
+- ✨ **23 Reference Modules**: Functions, Stages, Rules, Services
+- ✨ **7 Python Scripts**: Automation tools for package/KB management
+- ✨ **External Tool Support**: SKILL, MCP, plugins integration
+- ✨ **4 KB Creation Modes**: Flexible knowledge base management
+- ✨ **Two-Layer EHRB Detection**: Keyword + Semantic analysis
+- ✨ **New Directory Structure**: skills/helloagents/ with SKILL.md and SKILL.toml
 
-[View Full Changelog →](./CHANGELOG.md)
+**Previous: v1.x (2025-12-18)**
+- Initial release as AI Programming Modular Skill System
+- 3-stage workflow (Analyze → Design → Develop)
+- 4 commands (~auto, ~plan, ~exec, ~init)
+- 6 skill files
 
----
-
-## 🤝 Contributing
-
-1. **Fork & Clone** the repository
-2. **Create feature branch**: `git checkout -b feature/my-improvement`
-3. **Follow conventions**: Conventional Commits, update CHANGELOG
-4. **Submit PR** with description
-
-### Contribution Ideas
-- 🐛 Found a bug? [Report it](https://github.com/hellowind777/helloagents/issues)
-- 💡 Have an idea? [Discuss it](https://github.com/hellowind777/helloagents/discussions)
-- 🌍 Translate skills to other languages
-- 🎨 Create domain-specific skills (mobile, data science)
+[View Full Changelog →](./helloagents/CHANGELOG.md)
 
 ---
 
@@ -716,52 +619,29 @@ This ensures:
 
 **We take security seriously.**
 
-- ✅ EHRB detection (G9) protects against prod operations
+- ✅ EHRB detection protects against high-risk operations
+- ✅ Two-layer analysis (keyword + semantic)
+- ✅ Automatic workflow escalation on risk detection
 - ✅ No hardcoded secrets allowed
 - ✅ Cross-platform command validation
-- ✅ Automatic workflow escalation on risk detection
 
-**Found a vulnerability?** Report privately via [GitHub Discussions](https://github.com/hellowind777/helloagents/discussions)
-
----
-
-## 📜 License & Attribution (**Commercial use allowed, attribution required**)
-
-To ensure "commercial use allowed + attribution required", this project adopts a **dual-license** scheme:
-
-1. **Code** — **Apache License 2.0** © 2025 Hellowind
-   - Commercial use is allowed. You must retain **LICENSE** and **NOTICE** information in your distribution.
-   - Include a `NOTICE` in your distribution (example):
-     <pre>
-     This product includes "HelloAGENTS" (author: <a href="https://github.com/hellowind777/helloagents">Hellowind</a>), licensed under the Apache License 2.0.
-     </pre>
-
-2. **Documentation (README/PROJECTWIKI/Diagrams)** — **CC BY 4.0** © 2025 Hellowind
-   - Commercial use is allowed, but **attribution is required**; provide a license link and indicate whether changes were made.
-   - Suggested attribution when reusing documentation:
-     <pre>
-     Text/graphics adapted from "HelloAGENTS" — © 2025 <a href="https://github.com/hellowind777/helloagents">Hellowind</a>, CC BY 4.0.
-     </pre>
-
-3. **Unified attribution suggestion (for both code and docs):**
-     <pre>
-     HelloAGENTS — © 2025 <a href="https://github.com/hellowind777/helloagents">Hellowind</a>. Code: Apache-2.0; Docs: CC BY 4.0.
-     </pre>
+**Found a vulnerability?**
+- Email: security@helloagents.dev (private disclosure)
+- Do not create public issues for security vulnerabilities
 
 ---
 
 ## 🙏 Acknowledgments
 
-**Inspired by:**
-- [Mermaid](https://mermaid.js.org/) — Beautiful diagrams
-- [Conventional Commits](https://www.conventionalcommits.org/) — Commit standards
-- [Keep a Changelog](https://keepachangelog.com/) — Version management
-- GPT/SKILLS Official Guidelines — Rule structure patterns
+**Built upon:**
+- AI CLI ecosystem (Claude Code, Codex CLI, etc.)
+- Model Context Protocol (MCP)
+- Keep a Changelog format
 
 **Community:**
 - All contributors who submitted PRs
 - Early adopters who provided feedback
-- You, for reading this far! 🎉
+- And you, for reading this far! 🎉
 
 ---
 
@@ -774,23 +654,17 @@ To ensure "commercial use allowed + attribution required", this project adopts a
 
 ---
 
-## 📊 Project Stats
+## 📜 License
 
-<div align="center">
+This project is licensed under the [Apache-2.0 License](./LICENSE).
 
-![GitHub stars](https://img.shields.io/github/stars/hellowind777/helloagents?style=social)
-![GitHub forks](https://img.shields.io/github/forks/hellowind777/helloagents?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/hellowind777/helloagents?style=social)
-![GitHub contributors](https://img.shields.io/github/contributors/hellowind777/helloagents)
-![GitHub last commit](https://img.shields.io/github/last-commit/hellowind777/helloagents)
-
-</div>
+See [LICENSE](./LICENSE) for full details.
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by [Hellowind](https://github.com/hellowind777)**
+**Made with ❤️ by [Hellowind](https://github.com/hellowind777/helloagents)**
 
 [⬆ Back to Top](#helloagents)
 
