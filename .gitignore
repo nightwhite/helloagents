@@ -4,3 +4,7 @@ COMMIT_MESSAGE.md
 
 # Local reference materials (not part of the ruleset distribution)
 reference
+
+# Python bytecode/cache
+**/__pycache__/
+*.py[cod]
